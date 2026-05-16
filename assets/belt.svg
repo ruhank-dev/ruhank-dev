@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="110" viewBox="0 0 900 110">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&amp;display=swap');
+
+      .bg { fill: #000; }
+      .border-t { stroke: #2a2a2a; stroke-width: 1; }
+
+      .belt-group {
+        animation: scroll 28s linear infinite;
+      }
+      @keyframes scroll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-900px); }
+      }
+
+      .b-box {
+        fill: #000;
+        stroke: #222;
+        stroke-width: 1;
+      }
+      .b-label {
+        font-family: 'Manrope', Arial, sans-serif;
+        font-size: 7px;
+        font-weight: 600;
+        fill: #555;
+        text-anchor: middle;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      /* fade edges */
+      .fade-l { fill: url(#fl); }
+      .fade-r { fill: url(#fr); }
+
+      /* section labels */
+      .sec-title {
+        font-family: 'Manrope', Arial, sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #fff;
+        text-anchor: middle;
+        letter-spacing: 4px;
+      }
+      .sec-line { stroke: #333; stroke-width: 1; }
+    </style>
+
+    <linearGradient id="fl" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#000" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fr" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%"   stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- clip to belt area -->
+    <clipPath id="beltclip">
+      <rect x="0" y="18" width="900" height="92"/>
+    </clipPath>
+  </defs>
+
+  <rect class="bg" width="900" height="110"/>
+
+  <!-- section header -->
+  <line class="sec-line" x1="30" y1="14" x2="360" y2="14"/>
+  <text class="sec-title" x="450" y="19">TECH STACK</text>
+  <line class="sec-line" x1="540" y1="14" x2="870" y2="14"/>
+
+  <!-- top/bottom borders -->
+  <line class="border-t" x1="0" y1="32" x2="900" y2="32"/>
+  <line class="border-t" x1="0" y1="100" x2="900" y2="100"/>
+
+  <!-- scrolling belt — clipped -->
+  <g clip-path="url(#beltclip)">
+    <g class="belt-group">
+      <!-- Item dimensions: 84px wide, 60px tall, gap 12px → pitch = 96px -->
+      <!-- 10 items × 96 = 960px, doubled = 1920px, scroll by 960px -->
+
+      <!-- SET 1 -->
+      <!-- Python -->
+      <g transform="translate(0,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Python</text>
+      </g>
+      <!-- C++ -->
+      <g transform="translate(96,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">C++</text>
+      </g>
+      <!-- React -->
+      <g transform="translate(192,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">React</text>
+      </g>
+      <!-- Next.js -->
+      <g transform="translate(288,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Next.js</text>
+      </g>
+      <!-- Docker -->
+      <g transform="translate(384,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Docker</text>
+      </g>
+      <!-- Linux -->
+      <g transform="translate(480,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Linux</text>
+      </g>
+      <!-- Git -->
+      <g transform="translate(576,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Git</text>
+      </g>
+      <!-- MongoDB -->
+      <g transform="translate(672,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">MongoDB</text>
+      </g>
+      <!-- Java -->
+      <g transform="translate(768,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Java</text>
+      </g>
+      <!-- JS -->
+      <g transform="translate(864,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">JS</text>
+      </g>
+
+      <!-- SET 2 (duplicate for seamless loop) -->
+      <g transform="translate(960,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Python</text>
+      </g>
+      <g transform="translate(1056,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">C++</text>
+      </g>
+      <g transform="translate(1152,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">React</text>
+      </g>
+      <g transform="translate(1248,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Next.js</text>
+      </g>
+      <g transform="translate(1344,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Docker</text>
+      </g>
+      <g transform="translate(1440,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Linux</text>
+      </g>
+      <g transform="translate(1536,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Git</text>
+      </g>
+      <g transform="translate(1632,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">MongoDB</text>
+      </g>
+      <g transform="translate(1728,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">Java</text>
+      </g>
+      <g transform="translate(1824,35)">
+        <rect class="b-box" x="0" y="0" width="84" height="60" rx="2"/>
+        <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" x="29" y="8" width="26" height="26"/>
+        <text class="b-label" x="42" y="52">JS</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- fade edges -->
+  <rect class="fade-l" x="0" y="32" width="80" height="68"/>
+  <rect class="fade-r" x="820" y="32" width="80" height="68"/>
+</svg>

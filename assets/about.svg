@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap');
+      .bg { fill: #000; }
+      .sec-title { font-family:'Manrope',Arial,sans-serif; font-size:11px; font-weight:700; fill:#fff; text-anchor:middle; letter-spacing:4px; }
+      .sec-line { stroke:#333; stroke-width:1; }
+      .div-v { stroke:#1a1a1a; stroke-width:1; }
+      .div-h { stroke:#111; stroke-width:1; }
+      .abt-title { font-family:'Manrope',Arial,sans-serif; font-size:9px; font-weight:700; fill:#666; letter-spacing:3px; text-transform:uppercase; }
+      .abt-key { font-family:'Manrope',Arial,sans-serif; font-size:10px; font-weight:500; fill:#555; }
+      .abt-val { font-family:'Manrope',Arial,sans-serif; font-size:10px; font-weight:400; fill:#bbb; }
+      .cbtn { fill:#000; stroke:#252525; stroke-width:1; }
+      .cbtn-txt { font-family:'Manrope',Arial,sans-serif; font-size:10px; font-weight:600; fill:#777; letter-spacing:2px; text-transform:uppercase; text-anchor:middle; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="260"/>
+
+  <!-- About section -->
+  <line class="sec-line" x1="30" y1="18" x2="390" y2="18"/>
+  <text class="sec-title" x="450" y="23">ABOUT</text>
+  <line class="sec-line" x1="510" y1="18" x2="870" y2="18"/>
+
+  <!-- vertical divider -->
+  <line class="div-v" x1="450" y1="34" x2="450" y2="210"/>
+
+  <!-- LEFT: Education -->
+  <text class="abt-title" x="46" y="52">Education</text>
+  <line class="div-h" x1="46" y1="57" x2="420" y2="57"/>
+
+  <text class="abt-key" x="46"  y="78">University</text>
+  <text class="abt-val" x="418" y="78" text-anchor="end">FAST NUCES</text>
+  <line class="div-h" x1="46" y1="84" x2="420" y2="84"/>
+
+  <text class="abt-key" x="46"  y="104">Degree</text>
+  <text class="abt-val" x="418" y="104" text-anchor="end">BS Computer Science</text>
+  <line class="div-h" x1="46" y1="110" x2="420" y2="110"/>
+
+  <text class="abt-key" x="46"  y="130">Expected</text>
+  <text class="abt-val" x="418" y="130" text-anchor="end">2027</text>
+  <line class="div-h" x1="46" y1="136" x2="420" y2="136"/>
+
+  <text class="abt-key" x="46"  y="156">A-Levels</text>
+  <text class="abt-val" x="418" y="156" text-anchor="end">PAEC Science School</text>
+  <line class="div-h" x1="46" y1="162" x2="420" y2="162"/>
+
+  <!-- RIGHT: Info -->
+  <text class="abt-title" x="466" y="52">Info</text>
+  <line class="div-h" x1="466" y1="57" x2="870" y2="57"/>
+
+  <text class="abt-key" x="466"  y="78">Location</text>
+  <text class="abt-val" x="868" y="78" text-anchor="end">Islamabad, PK</text>
+  <line class="div-h" x1="466" y1="84" x2="870" y2="84"/>
+
+  <text class="abt-key" x="466"  y="104">Email</text>
+  <text class="abt-val" x="868" y="104" text-anchor="end">ruhan.k.dev@gmail.com</text>
+  <line class="div-h" x1="466" y1="110" x2="870" y2="110"/>
+
+  <text class="abt-key" x="466"  y="130">Focus</text>
+  <text class="abt-val" x="868" y="130" text-anchor="end">AI · Systems · Fullstack</text>
+  <line class="div-h" x1="466" y1="136" x2="870" y2="136"/>
+
+  <text class="abt-key" x="466"  y="156">Status</text>
+  <text class="abt-val" x="868" y="156" text-anchor="end">Open to opportunities</text>
+  <line class="div-h" x1="466" y1="162" x2="870" y2="162"/>
+
+  <!-- Connect section -->
+  <line class="sec-line" x1="30"  y1="188" x2="360" y2="188"/>
+  <text class="sec-title" x="450" y="193">CONNECT</text>
+  <line class="sec-line" x1="540" y1="188" x2="870" y2="188"/>
+
+  <!-- Email button -->
+  <rect class="cbtn" x="30"  y="204" width="418" height="44" rx="2"/>
+  <text class="cbtn-txt" x="239" y="231">✉  ruhan.k.dev@gmail.com</text>
+
+  <!-- LinkedIn button -->
+  <rect class="cbtn" x="452" y="204" width="418" height="44" rx="2"/>
+  <text class="cbtn-txt" x="661" y="231">in  LinkedIn</text>
+</svg>
