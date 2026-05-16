@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Manrope:wght@400;600;700&amp;display=swap');
+
+      .bg { fill: #000; }
+
+      /* scanline overlay */
+      .scan { fill: url(#scanpat); opacity: 0.04; }
+
+      /* title */
+      .title {
+        font-family: 'Bebas Neue', Impact, sans-serif;
+        font-size: 96px;
+        fill: #fff;
+        letter-spacing: 12px;
+        text-anchor: middle;
+        animation: flicker 8s ease-in-out infinite;
+      }
+      @keyframes flicker {
+        0%,100% { opacity: 1; }
+        92% { opacity: 1; }
+        93% { opacity: 0.7; }
+        94% { opacity: 1; }
+        96% { opacity: 0.85; }
+        97% { opacity: 1; }
+      }
+
+      /* subtitle */
+      .sub {
+        font-family: 'Manrope', Arial, sans-serif;
+        font-size: 11px;
+        fill: #aaa;
+        letter-spacing: 4px;
+        text-anchor: middle;
+        font-weight: 600;
+      }
+      .loc {
+        font-family: 'Manrope', Arial, sans-serif;
+        font-size: 10px;
+        fill: #555;
+        letter-spacing: 3px;
+        text-anchor: middle;
+        font-weight: 400;
+      }
+      .gh {
+        font-family: 'Manrope', Arial, sans-serif;
+        font-size: 10px;
+        fill: #333;
+        letter-spacing: 4px;
+        text-anchor: middle;
+        font-weight: 500;
+      }
+
+      /* divider line */
+      .div-line { stroke: #222; stroke-width: 1; }
+
+      /* particle dots */
+      .p { fill: #fff; animation: pdrift 6s ease-in-out infinite; }
+      .p1  { animation-duration: 5.1s; animation-delay: 0s; }
+      .p2  { animation-duration: 6.7s; animation-delay: -1.2s; }
+      .p3  { animation-duration: 4.8s; animation-delay: -2.4s; }
+      .p4  { animation-duration: 7.2s; animation-delay: -0.8s; }
+      .p5  { animation-duration: 5.5s; animation-delay: -3.1s; }
+      .p6  { animation-duration: 6.1s; animation-delay: -1.7s; }
+      .p7  { animation-duration: 4.9s; animation-delay: -4.2s; }
+      .p8  { animation-duration: 7.8s; animation-delay: -0.3s; }
+      .p9  { animation-duration: 5.3s; animation-delay: -2.9s; }
+      .p10 { animation-duration: 6.4s; animation-delay: -1.5s; }
+      .p11 { animation-duration: 5.7s; animation-delay: -3.8s; }
+      .p12 { animation-duration: 4.6s; animation-delay: -0.6s; }
+      .p13 { animation-duration: 7.0s; animation-delay: -2.2s; }
+      .p14 { animation-duration: 5.9s; animation-delay: -4.5s; }
+      .p15 { animation-duration: 6.3s; animation-delay: -1.1s; }
+      .p16 { animation-duration: 4.7s; animation-delay: -3.6s; }
+      .p17 { animation-duration: 7.5s; animation-delay: -0.9s; }
+      .p18 { animation-duration: 5.2s; animation-delay: -2.7s; }
+      .p19 { animation-duration: 6.6s; animation-delay: -4.0s; }
+      .p20 { animation-duration: 4.4s; animation-delay: -1.8s; }
+
+      @keyframes pdrift {
+        0%   { transform: translate(0px, 0px); opacity: 0.6; }
+        25%  { transform: translate(3px, -4px); opacity: 0.9; }
+        50%  { transform: translate(-2px, -7px); opacity: 0.5; }
+        75%  { transform: translate(4px, -3px); opacity: 0.8; }
+        100% { transform: translate(0px, 0px); opacity: 0.6; }
+      }
+
+      /* glitch layers */
+      .glitch-r {
+        font-family: 'Bebas Neue', Impact, sans-serif;
+        font-size: 96px;
+        fill: #f00;
+        letter-spacing: 12px;
+        text-anchor: middle;
+        opacity: 0;
+        animation: glitch-r 9s steps(1) infinite;
+        clip-path: url(#gtop);
+      }
+      .glitch-b {
+        font-family: 'Bebas Neue', Impact, sans-serif;
+        font-size: 96px;
+        fill: #0ff;
+        letter-spacing: 12px;
+        text-anchor: middle;
+        opacity: 0;
+        animation: glitch-b 9s steps(1) infinite;
+        clip-path: url(#gbot);
+      }
+      @keyframes glitch-r {
+        0%,89%,100% { opacity:0; transform:translate(0,0); }
+        90% { opacity:0.6; transform:translate(-3px,1px); }
+        91% { opacity:0; }
+        93% { opacity:0.4; transform:translate(2px,-1px); }
+        94% { opacity:0; }
+      }
+      @keyframes glitch-b {
+        0%,89%,100% { opacity:0; transform:translate(0,0); }
+        90% { opacity:0.5; transform:translate(3px,2px); }
+        91.5% { opacity:0; }
+        93.5% { opacity:0.3; transform:translate(-2px,1px); }
+        94.5% { opacity:0; }
+      }
+
+      /* corner marks */
+      .corner { stroke: #222; stroke-width: 1; fill: none; }
+    </style>
+
+    <pattern id="scanpat" x="0" y="0" width="2" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
+
+    <clipPath id="gtop">
+      <rect x="0" y="100" width="900" height="50"/>
+    </clipPath>
+    <clipPath id="gbot">
+      <rect x="0" y="160" width="900" height="50"/>
+    </clipPath>
+  </defs>
+
+  <!-- background -->
+  <rect class="bg" width="900" height="320"/>
+  <!-- scanlines -->
+  <rect class="scan" width="900" height="320"/>
+
+  <!-- corner decorations -->
+  <polyline class="corner" points="12,32 12,12 32,12"/>
+  <polyline class="corner" points="868,12 888,12 888,32"/>
+  <polyline class="corner" points="12,288 12,308 32,308"/>
+  <polyline class="corner" points="868,308 888,308 888,288"/>
+
+  <!-- ambient particle dots scattered around -->
+  <circle class="p p1"  cx="42"  cy="54"  r="1.2" opacity="0.4"/>
+  <circle class="p p2"  cx="118" cy="38"  r="0.8" opacity="0.3"/>
+  <circle class="p p3"  cx="860" cy="48"  r="1.1" opacity="0.35"/>
+  <circle class="p p4"  cx="790" cy="72"  r="0.7" opacity="0.25"/>
+  <circle class="p p5"  cx="58"  cy="220" r="1.0" opacity="0.3"/>
+  <circle class="p p6"  cx="840" cy="200" r="0.9" opacity="0.35"/>
+  <circle class="p p7"  cx="160" cy="270" r="1.3" opacity="0.25"/>
+  <circle class="p p8"  cx="750" cy="265" r="0.8" opacity="0.3"/>
+  <circle class="p p9"  cx="200" cy="80"  r="1.0" opacity="0.2"/>
+  <circle class="p p10" cx="680" cy="60"  r="1.2" opacity="0.3"/>
+  <circle class="p p11" cx="300" cy="40"  r="0.7" opacity="0.25"/>
+  <circle class="p p12" cx="580" cy="35"  r="1.1" opacity="0.2"/>
+  <circle class="p p13" cx="380" cy="280" r="0.9" opacity="0.3"/>
+  <circle class="p p14" cx="520" cy="285" r="1.0" opacity="0.25"/>
+  <circle class="p p15" cx="90"  cy="150" r="0.8" opacity="0.2"/>
+  <circle class="p p16" cx="820" cy="145" r="1.2" opacity="0.25"/>
+  <circle class="p p17" cx="240" cy="300" r="0.7" opacity="0.2"/>
+  <circle class="p p18" cx="660" cy="295" r="1.0" opacity="0.3"/>
+  <circle class="p p19" cx="450" cy="22"  r="1.1" opacity="0.15"/>
+  <circle class="p p20" cx="450" cy="305" r="0.9" opacity="0.15"/>
+
+  <!-- github label -->
+  <text class="gh" x="450" y="78">GITHUB.COM / RUHAN-K-DEV</text>
+
+  <!-- glitch layers (behind main title) -->
+  <text class="glitch-r" x="450" y="178">RUHAN-K-DEV</text>
+  <text class="glitch-b" x="450" y="178">RUHAN-K-DEV</text>
+
+  <!-- main title -->
+  <text class="title" x="450" y="178">RUHAN-K-DEV</text>
+
+  <!-- divider -->
+  <line class="div-line" x1="160" y1="198" x2="740" y2="198"/>
+
+  <!-- subtitle -->
+  <text class="sub" x="450" y="225">SOFTWARE ENGINEER · AI ENGINEER · SYSTEMS PROGRAMMER</text>
+  <text class="loc" x="450" y="250">FAST NUCES · ISLAMABAD, PK · BSCS 2027</text>
+</svg>
