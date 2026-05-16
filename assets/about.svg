@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <defs><style>
+    .ak { font-family:Arial,sans-serif; font-size:10px; fill:#555; }
+    .av { font-family:Arial,sans-serif; font-size:10px; fill:#bbb; }
+    .at { font-family:Arial,sans-serif; font-size:9px;  fill:#444; font-weight:bold; letter-spacing:3px; }
+    .st { font-family:Arial,sans-serif; font-size:11px; fill:#fff; font-weight:bold; text-anchor:middle; letter-spacing:4px; }
+    .ct { font-family:Arial,sans-serif; font-size:10px; fill:#666; font-weight:bold; text-anchor:middle; letter-spacing:2px; }
+  </style></defs>
+
+  <rect width="900" height="240" fill="#000"/>
+
+  <!-- section header -->
+  <line x1="30" y1="16" x2="395" y2="16" stroke="#333" stroke-width="1"/>
+  <text class="st" x="450" y="21">ABOUT</text>
+  <line x1="505" y1="16" x2="870" y2="16" stroke="#333" stroke-width="1"/>
+
+  <line x1="450" y1="30" x2="450" y2="175" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- LEFT -->
+  <text class="at" x="46" y="48">EDUCATION</text>
+  <line x1="46" y1="52" x2="420" y2="52" stroke="#111" stroke-width="1"/>
+  <text class="ak" x="46" y="70">University</text><text class="av" x="418" y="70" text-anchor="end">FAST NUCES</text>
+  <line x1="46" y1="75" x2="420" y2="75" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="46" y="93">Degree</text><text class="av" x="418" y="93" text-anchor="end">BS Computer Science</text>
+  <line x1="46" y1="98" x2="420" y2="98" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="46" y="116">Expected</text><text class="av" x="418" y="116" text-anchor="end">2027</text>
+  <line x1="46" y1="121" x2="420" y2="121" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="46" y="139">A-Levels</text><text class="av" x="418" y="139" text-anchor="end">PAEC Science School</text>
+
+  <!-- RIGHT -->
+  <text class="at" x="466" y="48">INFO</text>
+  <line x1="466" y1="52" x2="870" y2="52" stroke="#111" stroke-width="1"/>
+  <text class="ak" x="466" y="70">Location</text><text class="av" x="868" y="70" text-anchor="end">Islamabad, PK</text>
+  <line x1="466" y1="75" x2="870" y2="75" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="466" y="93">Email</text><text class="av" x="868" y="93" text-anchor="end">ruhan.k.dev@gmail.com</text>
+  <line x1="466" y1="98" x2="870" y2="98" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="466" y="116">Focus</text><text class="av" x="868" y="116" text-anchor="end">AI · Systems · Fullstack</text>
+  <line x1="466" y1="121" x2="870" y2="121" stroke="#0d0d0d" stroke-width="1"/>
+  <text class="ak" x="466" y="139">Status</text><text class="av" x="868" y="139" text-anchor="end">Open to opportunities</text>
+
+  <!-- Connect -->
+  <line x1="30" y1="178" x2="365" y2="178" stroke="#333" stroke-width="1"/>
+  <text class="st" x="450" y="183">CONNECT</text>
+  <line x1="535" y1="178" x2="870" y2="178" stroke="#333" stroke-width="1"/>
+
+  <a href="mailto:ruhan.k.dev@gmail.com">
+    <rect x="30" y="196" width="415" height="38" rx="2" fill="#000" stroke="#252525" stroke-width="1"/>
+    <text class="ct" x="237" y="220">&#9993;  ruhan.k.dev@gmail.com</text>
+  </a>
+  <a href="https://www.linkedin.com/in/ruhan-kamran-b99007372/">
+    <rect x="455" y="196" width="415" height="38" rx="2" fill="#000" stroke="#252525" stroke-width="1"/>
+    <text class="ct" x="662" y="220">in  linkedin.com/in/ruhan-kamran</text>
+  </a>
+</svg>
