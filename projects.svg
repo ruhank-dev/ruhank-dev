@@ -40,15 +40,15 @@
       .holo {
         font-family: 'Bebas Neue', Impact, sans-serif;
         font-size: 72px;
-        fill: none;
-        stroke: rgba(255,255,255,0.07);
-        stroke-width: 0.5;
-        animation: holo 5s ease infinite alternate;
+        fill: rgba(255,255,255,0.08);
+        stroke: rgba(255,255,255,0.4);
+        stroke-width: 1;
+        animation: holo 4s ease infinite alternate;
       }
       @keyframes holo {
-        0%   { opacity: 0.5; }
-        50%  { opacity: 1.0; }
-        100% { opacity: 0.5; }
+        0%   { opacity: 0.55; fill: rgba(255,255,255,0.06); stroke: rgba(200,220,255,0.35); }
+        50%  { opacity: 1.0;  fill: rgba(255,255,255,0.12); stroke: rgba(180,220,255,0.55); }
+        100% { opacity: 0.65; fill: rgba(255,255,255,0.08); stroke: rgba(255,255,255,0.40); }
       }
 
       /* card shimmer on hover not possible in SVG, use subtle pulse */
