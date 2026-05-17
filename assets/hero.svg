@@ -172,14 +172,14 @@
   <circle class="p p20" cx="450" cy="305" r="0.9" opacity="0.15"/>
 
   <!-- github label -->
-  <text class="gh" x="450" y="78">GITHUB.COM / RUHAN-K-DEV</text>
+  <text class="gh" x="450" y="78">GITHUB.COM / RUHANK-DEV</text>
 
   <!-- glitch layers (behind main title) -->
-  <text class="glitch-r" x="450" y="178">RUHAN-K-DEV</text>
-  <text class="glitch-b" x="450" y="178">RUHAN-K-DEV</text>
+  <text class="glitch-r" x="450" y="178">RUHANK-DEV</text>
+  <text class="glitch-b" x="450" y="178">RUHANK-DEV</text>
 
   <!-- main title -->
-  <text class="title" x="450" y="178">RUHAN-K-DEV</text>
+  <text class="title" x="450" y="178">RUHANK-DEV</text>
 
   <!-- divider -->
   <line class="div-line" x1="160" y1="198" x2="740" y2="198"/>
